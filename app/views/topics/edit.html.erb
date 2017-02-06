@@ -1,0 +1,16 @@
+<%= render 'layouts/nav' %>
+
+<blockquote>
+    <h5>Enhance your topic!</h5>
+</blockquote><br>
+
+<%= render 'form', topic: @topic %>
+
+<br><center>
+    <button class="btn waves-effect waves-light" id="btnEdit">
+        <%= link_to 'Show', @topic %>
+    </button>
+    <button class="btn waves-effect waves-light" id="btnEdit">
+        <%= link_to 'Back', topics_path %>
+    </button>
+</center>
